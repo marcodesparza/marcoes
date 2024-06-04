@@ -1,22 +1,37 @@
 import './style.css'
 import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.ts'
-import './bright.ts'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <div>
+  <div class="cratebox">
     <a href="https://vitejs.dev" target="_blank">
       <img src="${viteLogo}" class="logo" alt="Vite logo" />
     </a>
     <h1>Marco Esparza</h1>
     <div class="card">
       Empecemos a ver exactamente por que estas aqui
-    <h2 class="notes">Quien Soy</h2>
+    <h2 class="notes" id=whoim>Quien Soy</h2>
     <h2 class="notes">Experiencia</h2>
     <h2 class="notes">Sueños</h2>
     </div>
   </div>
 `
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+document.querySelector<HTMLDivElement>('#press')!.innerHTML = `
+  <div class="toolbox" id=caja>
+    Este es un cuadro con marco
+  </div>
+  `
+
+
+
+
+  // test completamente funcional, cambia el estado con esta funcion 
+
+//let test = document.getElementById('whoim')
+//let test1 = document.getElementById('caja')
+
+//test.addEventListener("mouseover", function() {
+ // test1.style.display = "none"
+//})
+
   

@@ -53,6 +53,7 @@ h1 {
 .notes {
   text-align: left;
   text-shadow: 0 0 10px #fff;
+  margin-left: auto;
 
 }
 
@@ -85,7 +86,7 @@ h1 {
   height: 200px;
   border: 5px solid #000; /* Marco negro de 5px de grosor */
   padding: 20px; /* Espacio interno del cuadro */
-  margin: 50px auto; /* Centrar el cuadro horizontalmente */
+  margin: 5px; /* Centrar el cuadro horizontalmente */
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra para darle efecto 3D */
   text-align: center; /* Centrar el texto dentro del cuadro */
   line-height: 200px; /* Centrar el texto verticalmente */
@@ -133,3 +134,8 @@ h1 {
 }
 
 
+.cratebox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

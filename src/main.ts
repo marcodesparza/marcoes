@@ -1,14 +1,22 @@
 import './style.css'
 import viteLogo from '/vite.svg'
 
+
+document.querySelector<HTMLDivElement>('#name')!.innerHTML = `
+<div class="princontainer">
+  <a href="https://vitejs.dev" target="_blank">
+    <img src="${viteLogo}" class="logo" alt="Vite logo" />
+  </a>
+  <h1 class="son">Marco Esparza</h1>
+  <p>
+    Empecemos a ver exactamente por que estas aqui
+  </p>
+</div>
+`
+
+
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div class="cratebox">
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <h1>Marco Esparza</h1>
-    <div class="card">
-      Empecemos a ver exactamente por que estas aqui
     <h2 class="notes" id=whoim>Quien Soy</h2>
     <h2 class="notes">Experiencia</h2>
     <h2 class="notes">Sueños</h2>

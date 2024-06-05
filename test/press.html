@@ -3,24 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuadro con Marco</title>
+    <title>Layout con Flexbox</title>
     <style>
-        .cuadro-con-marco {
-            width: 300px;
-            height: 200px;
-            border: 5px solid #000; /* Marco negro de 5px de grosor */
-            padding: 20px; /* Espacio interno del cuadro */
-            margin: 50px auto; /* Centrar el cuadro horizontalmente */
-            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra para darle efecto 3D */
-            text-align: center; /* Centrar el texto dentro del cuadro */
-            line-height: 200px; /* Centrar el texto verticalmente */
-            background-color: #f9f9f9; /* Color de fondo del cuadro */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .top-div {
+            width: 100%;
+            background-color: lightblue;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+        .bottom-divs {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+        .bottom-div {
+            width: 48%; /* Ajusta el ancho para asegurarte de que ambos divs quepan en la misma fila */
+            background-color: lightcoral;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
         }
     </style>
 </head>
 <body>
-    <div class="cuadro-con-marco">
-        Este es un cuadro con marco
+    <div class="container">
+        <div class="top-div">
+            Div superior centrado
+        </div>
+        <div class="bottom-divs">
+            <div class="bottom-div">
+                Div inferior izquierdo
+            </div>
+            <div class="bottom-div">
+                Div inferior derecho
+            </div>
+        </div>
     </div>
 </body>
 </html>
+
+
+
+
+
+.cratebox {
+    float: left;
+  }
+  
+  
+  .bear { 
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .name {
+    margin: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }

@@ -1,7 +1,6 @@
-// main.js
+
 //crear las variables de control 
 let starts:any = 0
-// Importa Three.js
 
 // Crear la escena
 const scene = new THREE.Scene();

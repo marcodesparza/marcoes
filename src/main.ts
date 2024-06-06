@@ -1,6 +1,6 @@
 import './style.css'
 import viteLogo from '/vite.svg'
-
+let textosinforma:string 
 
 document.querySelector<HTMLDivElement>('#name')!.innerHTML = `
 <div class="princontainer">
@@ -16,30 +16,44 @@ document.querySelector<HTMLDivElement>('#name')!.innerHTML = `
 
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <div class="cratebox">
-    <h2 class="notes" id=whoim>Quien Soy</h2>
-    <h2 class="notes">Experiencia</h2>
-    <h2 class="notes">Sueños</h2>
+  <div class="cratebox" id=cratebox>
+    <h2 class="notes" id=el1>Quien Soy</h2>
+    <h2 class="notes" id=el2>Experiencia</h2>
+    <h2 class="notes" id=el3>Sueños</h2>
     </div>
   </div>
 `
 
 document.querySelector<HTMLDivElement>('#press')!.innerHTML = `
   <div class="toolbox" id=caja>
-    Este es un cuadro con marco
+  <img src="${viteLogo}" class="logo" alt="Vite logo" />
   </div>
   `
 
 
 
+const onmouse = document.querySelectorAll('.notes')
 
-  // test completamente funcional, cambia el estado con esta funcion 
+onmouse.forEach(el => {
+  el.addEventListener('mouseover', (event: MouseEvent) => {
+    const objetivo = event.target as HTMLElement
+    let test2:string = objetivo.id
+    switch (test2){
+      case "el1":
+        document.getElementById('caja').innerHTML = "Soy Marco"
+        break
+      case "el2":
+        document.getElementById('caja').innerHTML = "Product Owner, SysAdmin"
+        break
+      case "el3":
+        document.getElementById('caja').innerHTML = "vivir en maza"
+        break
+    }
+  })
+})
 
-//let test = document.getElementById('whoim')
-//let test1 = document.getElementById('caja')
 
-//test.addEventListener("mouseover", function() {
- // test1.style.display = "none"
-//})
 
-  
+
+
+

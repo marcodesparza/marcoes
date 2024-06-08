@@ -1,5 +1,6 @@
 import './style.css'
 import viteLogo from '/vite.svg'
+import selfie from './gatito.jpg'
 
 document.querySelector<HTMLDivElement>('#name')!.innerHTML = `
 <div class="princontainer">
@@ -37,7 +38,7 @@ document.querySelector<HTMLDivElement>('#press')!.innerHTML = `
   `
   document.querySelector<HTMLDivElement>('#selfpicture')!.innerHTML = `
     <a href="https://vitejs.dev" target="_blank">
-    <img src="${viteLogo}" class="logo" alt="Vite logo" />
+    <img src="${selfie}" class="selfie" alt="Vite logo" />
     </a>
   `
 

@@ -12,10 +12,10 @@
 
     <main>
 
-      <header class="separator">
+      <header class="separator hidden">
         <div id="name"></div>
       </header>
-      <section id="mediagroup">
+      <section id="mediagroup" class="hidden">
         <div id="selfpicture"></div>
       </section>
       <section id="description" class="hidden">
@@ -29,7 +29,7 @@
         </div>
       </section>
 
-      <section class="light">
+      <section id="light" class="hidden">
         <h2>👩🏽‍🚀 Projects</h2>
 
         <p>
@@ -48,7 +48,7 @@
         <p>The best way out is always through <br>-Robert Frost</p>
       </blockquote>
 
-      <section class="left">
+      <section class="hidden" id="left">
         <h2>🌮 Work History</h2>
 
         <h3>McDonalds</h3>
@@ -76,8 +76,8 @@
     <script type="module" src="./src/main.ts"></script>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="./src/scene.ts"></script>
-    <script src="./src/animation.ts"></script>
+    <script src="./src/scene.ts" defer></script>
+    <script src="./src/animation.ts" defer></script>
 
 
 

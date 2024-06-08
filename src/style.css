@@ -76,7 +76,7 @@ canvas {
     line-height: 1;
   }
 
-  .left {
+  #left {
     grid-column: 6 / 12;
   }
 
@@ -117,7 +117,7 @@ canvas {
   #description { 
     align-items: center;
     grid-column: 2 / 12;
-    margin-bottom: 90%;
+    margin-bottom: 40%;
     border-radius: 40px;
   }
 
@@ -161,4 +161,16 @@ canvas {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
+  }
+
+  @media(prefers-reduced-motion) {
+    .hidden {
+      transition: none;
+    }
+  }
+
+
+  .selfie {
+    width: 50%;
+    height: 50%;
   }

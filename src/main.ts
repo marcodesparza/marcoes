@@ -1,6 +1,5 @@
 import './style.css'
 import viteLogo from '/vite.svg'
-let textosinforma:string 
 
 document.querySelector<HTMLDivElement>('#name')!.innerHTML = `
 <div class="princontainer">

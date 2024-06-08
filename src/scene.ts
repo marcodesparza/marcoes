@@ -10,7 +10,9 @@ const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerH
 camera.position.z = 5;
 
 // Crear el renderer
-const renderer = new THREE.WebGLRenderer();
+const renderer = new THREE.WebGLRenderer(
+    {canvas: document.querySelector('#bg')}
+);
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
@@ -45,12 +47,13 @@ function animate() {
     requestAnimationFrame(animate);
 
     // Alejarse continuamente
-    if (starts < 1000) {
+    if (starts < 10000) {
         camera.position.z += 0.01;
         starts += 1
 
     }else {
         camera.position.z -= 0.01;
+        
 
     }
 

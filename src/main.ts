@@ -4,10 +4,7 @@ let textosinforma:string
 
 document.querySelector<HTMLDivElement>('#name')!.innerHTML = `
 <div class="princontainer">
-  <a href="https://vitejs.dev" target="_blank">
-    <img src="${viteLogo}" class="logo" alt="Vite logo" />
-  </a>
-  <h1 class="son">Marco Esparza</h1>
+  <h1 class="son">😺 Marco Esparza</h1>
   <p>
     Empecemos a ver exactamente por que estas aqui
   </p>
@@ -31,6 +28,19 @@ document.querySelector<HTMLDivElement>('#press')!.innerHTML = `
   `
 
 
+  document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
+  <div>
+    <h2 class="notes" id=el1>Quien Soy</h2>
+    <h2 class="notes" id=el2>Experiencia</h2>
+    <h2 class="notes" id=el3>Sueños</h2>
+    </div>
+  </div>
+  `
+  document.querySelector<HTMLDivElement>('#selfpicture')!.innerHTML = `
+    <a href="https://vitejs.dev" target="_blank">
+    <img src="${viteLogo}" class="logo" alt="Vite logo" />
+    </a>
+  `
 
 const onmouse = document.querySelectorAll('.notes')
 

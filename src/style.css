@@ -92,20 +92,7 @@ canvas {
     margin: 0 auto;
     padding: 2rem;
   }
-  
 
-  .toolbox {
-    z-index: 1000;
-    width: 700px;
-    height: 300px;
-    border: 5px solid #000; /* Marco negro de 5px de grosor */
-    padding: 20px; /* Espacio interno del cuadro */
-    margin: 5px; /* Centrar el cuadro horizontalmente */
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra para darle efecto 3D */
-    text-align: center; /* Centrar el texto dentro del cuadro */
-    line-height: 200px; /* Centrar el texto verticalmente */
-    background-color: #1b1b1b; /* Color de fondo del cuadro */
-  }
 
 
   .separator { 
@@ -145,7 +132,9 @@ canvas {
   }
 
 
-
+  .subtitle {
+    margin-left: 5%;
+  }
 
   /* aqui comienzan las animaciones */
 
@@ -174,3 +163,21 @@ canvas {
     width: 50%;
     height: 50%;
   }
+
+
+
+  #press {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  #caja {
+    align-self: center;
+  }
+
+  .notes:hover {
+    filter: drop-shadow(0 0 1em #f3edf2aa);
+  }
+  

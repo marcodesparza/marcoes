@@ -50,10 +50,12 @@ function animate() {
     if (starts < 10000) {
         camera.position.z += 0.01;
         starts += 1
-
     }else {
-        camera.position.z -= 0.01;
-        
+        let test = camera.position.z 
+        camera.position.z = test - 0.01
+        if (test < -20){
+            starts = 0
+        }
 
     }
 

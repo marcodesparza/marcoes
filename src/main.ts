@@ -37,7 +37,7 @@ document.querySelector<HTMLDivElement>('#press')!.innerHTML = `
   </div>
   `
   document.querySelector<HTMLDivElement>('#selfpicture')!.innerHTML = `
-    <a href="https://vitejs.dev" target="_blank">
+    <a href="https://vitejs.dev" target="_blank" class="portada">
     <img src="${selfie}" class="selfie" alt="Vite logo" />
     </a>
   `
@@ -54,6 +54,10 @@ document.querySelector<HTMLDivElement>('#press')!.innerHTML = `
         </p>
   `
 
+
+
+
+  // hover para cambio de contenido en la descripcion
 const onmouse = document.querySelectorAll('.notes')
 
 onmouse.forEach(el => {

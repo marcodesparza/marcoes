@@ -160,8 +160,8 @@ canvas {
 
 
   .selfie {
-    width: 50%;
-    height: 50%;
+    width: 90%;
+    border-radius: 40px;
   }
 
 
@@ -181,3 +181,8 @@ canvas {
     filter: drop-shadow(0 0 1em #f3edf2aa);
   }
   
+  .portada {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

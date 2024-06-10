@@ -78,6 +78,8 @@ canvas {
 
   #left {
     grid-column: 6 / 12;
+    
+    border-radius: 40px;
   }
 
 
@@ -93,7 +95,10 @@ canvas {
     padding: 2rem;
   }
 
-
+  #light {
+    
+    border-radius: 40px;
+  }
 
   .separator { 
     margin-bottom: 100%;
@@ -155,9 +160,15 @@ canvas {
     justify-content: space-between;
   }
 
+  #resumes {
+    grid-column: 9 / 12;
+    
+    border-radius: 40px;
+  }
+
   #mediagroup {
     display: flex;
-    grid-column: 8 / 12;
+    grid-column: 9 / 12;
     grid-row: auto;
     margin-top: 0%;
     margin-bottom: 80%;

@@ -115,6 +115,40 @@ canvas {
     box-sizing: border-box;
   }
 
+  .pressblur {
+    animation-duration: .5s;
+    animation-name: animate-pop;
+    animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+  }
+ 
+  .zoom-out {
+    animation: zoomOut .5s;
+}
+
+  @keyframes zoomOut {
+    from {
+        transform: scale(1.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+  
+
+  @keyframes animate-pop {
+    0% {
+      opacity: 0;
+      transform: scale(0.5, 0.5);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: scale(1, 1);
+    }
+  }
+
+
+
   .menu {
     display: flex;
     width: 100%;
@@ -212,3 +246,6 @@ canvas {
     @media (min-width:1281px) { 
     /* hi-res laptops and desktops */ 
     }
+
+
+    

@@ -50,7 +50,7 @@ main {
   padding: 120px 0px;
 
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(24, 1fr);
 }
 
 /* generic styles */
@@ -63,6 +63,7 @@ blockquote {
   font-weight: 700;
   font-style: normal;
 }
+
 
 /* background */
 
@@ -94,7 +95,7 @@ section {
 blockquote {
   margin: 0;
   padding: 0;
-  grid-column: 2 / span 9;
+  grid-column: 2 / span 17;
   margin-bottom: var(--spacing);
 }
 
@@ -122,18 +123,18 @@ blockquote p {
   margin-bottom: 100%;
   margin-top: 0%;
   border-radius: 40px;
+  grid-column: 2 / 13;
 }
 
 #mediagroup {
   display: flex;
-  grid-column: 8 / 12;
+  grid-column: 15 / 24;
   margin-bottom: 100%;
   margin-top: 0%;
   border-radius: 40px;
   align-items: center;
   border-radius: 40px;
 
-  align-items: center;
 }
 
 
@@ -151,7 +152,7 @@ blockquote p {
 
 #description {
   align-items: center;
-  grid-column: 2 / 12;
+  grid-column: 2 / 24;
   margin-bottom: 40%;
   border-radius: 40px;
 }
@@ -186,14 +187,12 @@ blockquote p {
 /* end descripton */
 
 #left {
-  grid-column: 6 / 12;
+  grid-column: 11 / 24;
 
   border-radius: 40px;
 }
 
-#light {
-  border-radius: 40px;
-}
+
 
 .pressblur {
   animation-duration: 0.5s;
@@ -226,11 +225,7 @@ blockquote p {
   }
 }
 
-#resumes {
-  grid-column: 9 / 12;
 
-  border-radius: 40px;
-}
 
 /* aqui comienzan las animaciones */
 
@@ -266,3 +261,32 @@ blockquote p {
 .notes:hover {
   filter: drop-shadow(0 0 1em #f3edf2aa);
 }
+
+
+
+button { 
+  width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-right: 50px solid #555;
+	border-bottom: 25px solid transparent;
+}
+
+#light {
+  border-radius: 40px;
+  grid-column: 4 / 22;
+}
+
+.righty {
+  grid-column: 23 / 24;
+  
+  border-radius: 40px;
+  align-self: center;
+}
+
+.lefty {
+  grid-column: 2 / 3;
+  border-radius: 40px;
+  align-self: center;
+}
+

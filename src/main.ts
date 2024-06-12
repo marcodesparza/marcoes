@@ -1,6 +1,7 @@
 import "./style.css";
 import viteLogo from "/vite.svg";
 import selfie from "./gatito.jpg";
+import { slider } from "./slider.ts";
 
 document.querySelector<HTMLDivElement>("#name")!.innerHTML = `
 <div class="princontainer">
@@ -41,7 +42,7 @@ document.querySelector<HTMLDivElement>("#selfpicture")!.innerHTML = `
   `;
 
 document.querySelector<HTMLDivElement>("#proyects")!.innerHTML = `
-        <p>
+        <p >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
   `;
@@ -51,3 +52,16 @@ document.querySelector<HTMLDivElement>("#triumph")!.innerHTML = `
           lorem ipsum esta es una prueba de descipcion solamenmte
         </p>
   `;
+
+let projects: string[] = [];
+
+projects = [
+  "Jarsa. Mi carrera como administrador",
+  "ahora vemos que el estar como freelance esta bien",
+  "ser un docente cambio mi forma de persibir a las personas",
+];
+
+
+slider()
+
+

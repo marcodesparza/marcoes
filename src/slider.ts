@@ -1,5 +1,14 @@
 export function slider() {
+  let projects: string[] = [];
+
+  projects = [
+    "Jarsa. Mi carrera como administrador",
+    "ahora vemos que el estar como freelance esta bien",
+    "ser un docente cambio mi forma de persibir a las personas",
+    "mi experiencia en el amito escolar fue ",
+  ];
   let blood = 0;
+  let projectsstring = document.querySelector<HTMLDivElement>("#proyects")!;
   const righty = document.querySelector<HTMLButtonElement>("#right")!;
   const lefty = document.querySelector<HTMLButtonElement>("#left")!;
 
@@ -9,8 +18,7 @@ export function slider() {
     } else {
       blood += 1;
     }
-
-    console.log(blood);
+    projectsstring.innerHTML = `<p> ${projects[blood]} </p>`;
   };
   lefty.onclick = () => {
     if (blood < 1) {
@@ -18,7 +26,7 @@ export function slider() {
     } else {
       blood -= 1;
     }
-    console.log(blood);
+
+    projectsstring.innerHTML = `<p> ${projects[blood]} </p>`;
   };
-  console.log(blood);
 }

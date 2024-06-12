@@ -9,17 +9,16 @@ export function slider() {
     } else {
       blood += 1;
     }
-    
-    console.log(blood)
+
+    console.log(blood);
   };
   lefty.onclick = () => {
-    
-    if (blood < 1 ){
-        blood = 3 
+    if (blood < 1) {
+      blood = 3;
     } else {
-        blood -= 1;
+      blood -= 1;
     }
-    console.log(blood)
+    console.log(blood);
   };
   console.log(blood);
 }

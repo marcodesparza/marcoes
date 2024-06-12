@@ -61,7 +61,4 @@ projects = [
   "ser un docente cambio mi forma de persibir a las personas",
 ];
 
-
-slider()
-
-
+slider();

@@ -64,7 +64,6 @@ blockquote {
   font-style: normal;
 }
 
-
 /* background */
 
 canvas {
@@ -134,10 +133,7 @@ blockquote p {
   border-radius: 40px;
   align-items: center;
   border-radius: 40px;
-
 }
-
-
 
 .selfie {
   border-radius: 40px;
@@ -192,8 +188,6 @@ blockquote p {
   border-radius: 40px;
 }
 
-
-
 .pressblur {
   animation-duration: 0.5s;
   animation-name: animate-pop;
@@ -224,8 +218,6 @@ blockquote p {
     transform: scale(1, 1);
   }
 }
-
-
 
 /* aqui comienzan las animaciones */
 
@@ -262,14 +254,12 @@ blockquote p {
   filter: drop-shadow(0 0 1em #f3edf2aa);
 }
 
-
-
-button { 
+button {
   width: 0;
-	height: 0;
-	border-top: 25px solid transparent;
-	border-right: 50px solid #555;
-	border-bottom: 25px solid transparent;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-right: 50px solid #555;
+  border-bottom: 25px solid transparent;
 }
 
 #light {
@@ -290,4 +280,3 @@ button {
   border-radius: 40px;
   align-self: center;
 }
-

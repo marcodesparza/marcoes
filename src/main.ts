@@ -3,7 +3,6 @@ import viteLogo from "/vite.svg";
 import selfie from "./gatito.jpg";
 import { slider } from "./slider.ts";
 
-
 document.querySelector<HTMLDivElement>("#name")!.innerHTML = `
 <div class="princontainer">
   <h1 class="son">😺 Marco Esparza</h1>
@@ -18,15 +17,6 @@ document.querySelector<HTMLDivElement>("#name")!.innerHTML = `
         </div>
   </p>
 </div>
-`;
-
-document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
-  <div class="cratebox" id=cratebox>
-    <h2 class="notes" id=el1>Quien Soy</h2>
-    <h2 class="notes" id=el2>Experiencia</h2>
-    <h2 class="notes" id=el3>Sueños</h2>
-    </div>
-  </div>
 `;
 
 document.querySelector<HTMLDivElement>("#press")!.innerHTML = `
@@ -83,7 +73,15 @@ document.querySelector<HTMLDivElement>("#foot")!.innerHTML = `
     </div>
 `;
 
-
-
+document.querySelector<HTMLAllCollection>("#contact")!.innerHTML = `
+        <form autocomplete="off">
+                  <h2 class="contactme">Contactame</h2>
+                  <div class="input-group">
+                    <input type="text" name="name" placeholder="Nombre">
+                    <input type="email" name="email" placeholder="Email">
+                    <textarea name="message" cols="30" rows="5" placeholder="Mensaje"></textarea>
+                  </div>
+        </form>
+`;
 
 slider();

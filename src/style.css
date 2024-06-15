@@ -182,11 +182,6 @@ blockquote p {
 }
 /* end descripton */
 
-#contact {
-  grid-column: 6 / 20;
-  border-radius: 40px;
-}
-
 .pressblur {
   animation-duration: 0.5s;
   animation-name: animate-pop;
@@ -266,7 +261,7 @@ button {
 .righty {
   grid-column: 23 / 24;
   z-index: 1000;
-  
+
   background-color: whitesmoke;
   border-radius: 40px;
   align-self: center;
@@ -377,6 +372,9 @@ html {
 .headerbar {
   margin: 30px 0;
   border-top: 10%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 .headerbar ul {
   display: flex;
@@ -384,7 +382,6 @@ html {
   list-style-type: none;
 }
 .headerbar ul li a {
-  background-color: black;
   border-radius: 40px;
   color: white;
   margin: 20px;
@@ -396,4 +393,71 @@ html {
 }
 .headerbar ul li a:hover {
   opacity: 1;
+}
+
+.states {
+  margin: 0 auto;
+  padding: 0 auto;
+  position: relative;
+}
+
+.states li {
+  float: left;
+  position: left;
+  right: 50%
+}
+
+/* form */
+
+#contact {
+  grid-column: 10 / 16;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  border-radius: 40px;
+}
+
+form {
+  padding: 50px 55px;
+  box-shadow: 0 0 20px rgb black;
+  border-radius: 40px;
+  text-align: center;
+  width: 340px;
+}
+
+form h2 {
+  color: white;
+  font-size: 2vw;
+}
+
+.form-text {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  padding: 10% 14%;
+}
+
+input,
+textarea {
+  background-color: whitesmoke;
+  padding: 10% 14%;
+  margin-bottom: 5%;
+  border: 0;
+  border-radius: 10px;
+  font-size: 1vw;
+  color: gray;
+}
+
+::placeholder {
+  color: gray;
+  font-size: 1vw;
+}
+
+:focus {
+  outline: 1px solid black;
 }

@@ -3,11 +3,19 @@ import viteLogo from "/vite.svg";
 import selfie from "./gatito.jpg";
 import { slider } from "./slider.ts";
 
+
 document.querySelector<HTMLDivElement>("#name")!.innerHTML = `
 <div class="princontainer">
   <h1 class="son">😺 Marco Esparza</h1>
   <p class="daug">
     Empecemos a ver exactamente por que estas aqui
+     <div class="headerbar">
+            <ul class="states">
+                <li id="who"><a href="#">Quien soy</a></li>
+                <li id="experience"><a href="#">Mi experiencia</a></li>
+                <li id="contacme"><a href="#">Contactame</a></li>
+            </ul>
+        </div>
   </p>
 </div>
 `;
@@ -74,5 +82,8 @@ document.querySelector<HTMLDivElement>("#foot")!.innerHTML = `
         <p>Copyright &copy;2024; Desarrollado por <span class="designer">Marco</span></p>
     </div>
 `;
+
+
+
 
 slider();

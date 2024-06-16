@@ -74,12 +74,13 @@ document.querySelector<HTMLDivElement>("#foot")!.innerHTML = `
 `;
 
 document.querySelector<HTMLAllCollection>("#contact")!.innerHTML = `
-        <form autocomplete="off">
+        <form autocomplete="off" action="https://formsubmit.co/a14f6c3795f740ba3029e5404db113cd" method="POST">
                   <h2 class="contactme">Contactame</h2>
                   <div class="input-group">
                     <input type="text" name="name" placeholder="Nombre">
                     <input type="email" name="email" placeholder="Email">
                     <textarea name="message" cols="30" rows="5" placeholder="Mensaje"></textarea>
+                    <input class="send" type="submit" value="Enviar">
                   </div>
         </form>
 `;

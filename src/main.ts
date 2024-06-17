@@ -58,15 +58,7 @@ document.querySelector<HTMLDivElement>("#foot")!.innerHTML = `
             <a href=""><i class="fa-brands fa-twitter"></i></a>
             <a href=""><i class="fa-brands fa-google-plus"></i></a>
             <a href=""><i class="fa-brands fa-youtube"></i></a>
-        </div>
-        <div class="footerNav">
-            <ul><li><a href="">Inicio</a></li>
-                <li><a href="">Quien soy</a></li>
-                <li><a href="">Mi experiencia</a></li>
-                <li><a href="">Contactame</a></li>
-            </ul>
-        </div>
-        
+        </div>      
     </div>
     <div class="footerBottom">
         <p>Copyright &copy;2024; Desarrollado por <span class="designer">Marco</span></p>

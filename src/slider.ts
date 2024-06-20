@@ -1,16 +1,28 @@
 export function slider() {
   let projects: string[] = [];
-
+  let experienciastring: readonly string[] = [];
   projects = [
-    "Jarsa. Mi carrera como administrador",
+    "Jarsa. Mi carrera como administrador. Durante mi instancia en Jarsa Sistemas mantuve dos roles principales en la organizacion, siendo como principal el product owner y el secundario siendo SysAdmin. El giro especifico de la empresa son las implementaciones del software ERP llamado odoo. Siendo la implementacion el desarrollo y el mantenimiento del mismo las principales funciones ",
     "ahora vemos que el estar como freelance esta bien",
-    "ser un docente cambio mi forma de persibir a las personas",
-    "mi experiencia en el amito escolar fue ",
+    "Freelance, Developer, Sys Admin",
+    "maestro"
   ];
+
+  experienciastring = [
+    "Jarsa: Product Owner, SysAdmin",
+    "Steg: Product Owner, DevOps, SysAdmin, Developer ",
+    "Freelance",
+    "maestro"
+  ]
+
   let blood = 0;
   let projectsstring = document.querySelector<HTMLDivElement>("#proyects")!;
+  let experienciatitle = document.querySelector<HTMLDivElement>("#exptitle")!;
   const righty = document.querySelector<HTMLButtonElement>("#right")!;
   const lefty = document.querySelector<HTMLButtonElement>("#left")!;
+
+  projectsstring.innerHTML = `<p> ${projects[blood]} </p>`;
+  experienciatitle.innerHTML = `<h2> ${experienciastring[blood]} </h2>`;
 
   righty.onclick = () => {
     if (blood > 2) {
@@ -19,6 +31,7 @@ export function slider() {
       blood += 1;
     }
     projectsstring.innerHTML = `<p> ${projects[blood]} </p>`;
+    experienciatitle.innerHTML = `<h2> ${experienciastring[blood]} </h2>`;
   };
   lefty.onclick = () => {
     if (blood < 1) {
@@ -26,7 +39,9 @@ export function slider() {
     } else {
       blood -= 1;
     }
-
+    
+    experienciatitle.innerHTML = `<h2> ${experienciastring[blood]} </h2>`;
+    console.log(experienciastring[blood])
     projectsstring.innerHTML = `<p> ${projects[blood]} </p>`;
   };
 }

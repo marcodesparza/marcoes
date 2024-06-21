@@ -7,7 +7,7 @@ document.querySelector<HTMLDivElement>("#name")!.innerHTML = `
 <div class="princontainer">
   <h1 class="son">😺 Marco Esparza</h1>
   <p class="daug">
-    Empecemos a ver exactamente por que estas aqui
+  Bienvenido a una descripcion mas a fondo de quien soy 
      <div class="headerbar">
             <ul class="states">
                 <li id="who"><a href="#">Quien soy</a></li>
@@ -69,6 +69,8 @@ document.querySelector<HTMLAllCollection>("#contact")!.innerHTML = `
                     <input type="email" name="email" placeholder="Email">
                     <textarea name="message" cols="30" rows="5" placeholder="Mensaje"></textarea>
                     <input class="send" type="submit" value="Enviar">
+                    <input type="hidden" name="_next" value="http://localhost:5173/">
+                    <input type="hidden" name="_captcha" value="false">
                   </div>
         </form>
 `;

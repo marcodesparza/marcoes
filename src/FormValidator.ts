@@ -19,3 +19,18 @@ if (esCorreoElectronicoValido(email)) {
 } else {
     console.log("El correo electrónico no es válido.");
 }
+document.getElementById('submit').onclick = function() {
+    var value = document.getElementById('email').value;
+    console.log(value)
+    alert(value);
+  }
+
+
+
+  // Ejemplo de uso
+const email = "ejemplo@dominio.com";
+if (esCorreoElectronicoValido(email)) {
+  console.log("El correo electrónico es válido.");
+} else {
+  console.log("El correo electrónico no es válido.");
+}

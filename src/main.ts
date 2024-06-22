@@ -66,9 +66,9 @@ document.querySelector<HTMLAllCollection>("#contact")!.innerHTML = `
                   <h2 class="contactme">Contactame</h2>
                   <div class="input-group">
                     <input type="text" name="name" placeholder="Nombre">
-                    <input type="email" name="email" placeholder="Email">
+                    <input id="email" type="email" name="email" placeholder="Email">
                     <textarea name="message" cols="30" rows="5" placeholder="Mensaje"></textarea>
-                    <input class="send" type="submit" value="Enviar">
+                    <input class="send" id="submit" type="submit" value="Enviar">
                     <input type="hidden" name="_next" value="http://localhost:5173/">
                     <input type="hidden" name="_captcha" value="false">
                   </div>
@@ -76,3 +76,26 @@ document.querySelector<HTMLAllCollection>("#contact")!.innerHTML = `
 `;
 
 slider();
+
+
+document.getElementById('submit').onclick = function() {
+  var value = document.getElementById('email').value;
+  console.log(value)
+  alert(value);
+}
+
+function esCorreoElectronicoValido(email) {
+  // Definir el patrón de expresión regular para validar un correo electrónico
+  const patronCorreo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  // Comprobar si el correo electrónico cumple con el patrón
+  return patronCorreo.test(email);
+}
+
+// Ejemplo de uso
+const email = "ejemplo@dominio.com";
+if (esCorreoElectronicoValido(email)) {
+  console.log("El correo electrónico es válido.");
+} else {
+  console.log("El correo electrónico no es válido.");
+}

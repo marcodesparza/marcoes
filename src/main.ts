@@ -39,14 +39,6 @@ document.querySelector<HTMLDivElement>("#selfpicture")!.innerHTML = `
     </a>
   `;
 
-
-
-document.querySelector<HTMLDivElement>("#triumph")!.innerHTML = `
-        <p>
-          lorem ipsum esta es una prueba de descipcion solamenmte
-        </p>
-  `;
-
 document.querySelector<HTMLDivElement>("#foot")!.innerHTML = `
         <div class="socialIcons">
             <a href=""><i class="fa-brands fa-linkedin"></i></a>
@@ -77,27 +69,22 @@ document.querySelector<HTMLAllCollection>("#contact")!.innerHTML = `
 
 slider();
 
-
-
 function esCorreoElectronicoValido(email) {
   // Definir el patrón de expresión regular para validar un correo electrónico
-  const patronCorreo = /[a-zA-Z0-9!#$%&'*\/=?^_`\{\|\}~\+\-]([\.]?[a-zA-Z0-9!#$%&'*\/=?^_`\{\|\}~\+\-])+@[a-zA-Z0-9]([^@&%$\/\(\)=?¿!\.,:;]|\d)+[a-zA-Z0-9][\.][a-zA-Z]{2,4}([\.][a-zA-Z]{2})?/
+  const patronCorreo =
+    /[a-zA-Z0-9!#$%&'*\/=?^_`\{\|\}~\+\-]([\.]?[a-zA-Z0-9!#$%&'*\/=?^_`\{\|\}~\+\-])+@[a-zA-Z0-9]([^@&%$\/\(\)=?¿!\.,:;]|\d)+[a-zA-Z0-9][\.][a-zA-Z]{2,4}([\.][a-zA-Z]{2})?/;
 
   // Comprobar si el correo electrónico cumple con el patrón
   return patronCorreo.test(email);
 }
 
-
-document.querySelector<HTMLAllCollection>("#submit").addEventListener("submit", () => {
-  var value1 = document.getElementById('#email').value; 
-  if (esCorreoElectronicoValido(value1)) {
-    console.log("El correo electrónico es válido.");
-  } else {
-    console.log("El correo electrónico no es válido.");
-  }
-})
-
-
-
-
-
+document
+  .querySelector<HTMLAllCollection>("#submit")
+  .addEventListener("submit", () => {
+    var value1 = document.getElementById("#email").value;
+    if (esCorreoElectronicoValido(value1)) {
+      console.log("El correo electrónico es válido.");
+    } else {
+      console.log("El correo electrónico no es válido.");
+    }
+  });

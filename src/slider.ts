@@ -53,7 +53,6 @@ export function slider() {
     }
 
     experienciatitle.innerHTML = `<h2> ${experienciastring[blood]} </h2>`;
-    console.log(experienciastring[blood]);
     projectsstring.innerHTML = `<p> ${projects[blood]} </p>`;
     results.innerHTML = `<p> ${resultados[blood]} </p>`;
   };

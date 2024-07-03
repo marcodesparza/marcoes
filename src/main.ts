@@ -1,9 +1,9 @@
-  import "./style.css";
-  import viteLogo from "/vite.svg";
-  import selfie from "./gatito.jpg";
-  import { slider } from "./slider.ts";
+import "./style.css";
+import viteLogo from "/vite.svg";
+import selfie from "./gatito.jpg";
+import { slider } from "./slider.ts";
 
-  document.querySelector<HTMLDivElement>("#name")!.innerHTML = `
+document.querySelector<HTMLDivElement>("#name")!.innerHTML = `
   <div class="princontainer">
     <h1 class="son">😺 Marco Esparza</h1>
     <p class="daug">
@@ -19,13 +19,13 @@
   </div>
   `;
 
-  document.querySelector<HTMLDivElement>("#press")!.innerHTML = `
+document.querySelector<HTMLDivElement>("#press")!.innerHTML = `
     <div id=caja>
     <img src="${viteLogo}" class="logo" alt="Vite logo" />
     </div>
     `;
 
-  document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
+document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     <div>
       <h2 class="notes" id="el1">Quien Soy</h2>
       <h2 class="notes" id="el2">Experiencia</h2>
@@ -33,13 +33,13 @@
       </div>
     </div>
     `;
-  document.querySelector<HTMLDivElement>("#selfpicture")!.innerHTML = `
+document.querySelector<HTMLDivElement>("#selfpicture")!.innerHTML = `
       <a href="https://vitejs.dev" target="_blank" class="portada">
       <img src="${selfie}" class="selfie" alt="Vite logo" />
       </a>
     `;
 
-  document.querySelector<HTMLDivElement>("#foot")!.innerHTML = `
+document.querySelector<HTMLDivElement>("#foot")!.innerHTML = `
           <div class="socialIcons">
               <a href=""><i class="fa-brands fa-linkedin"></i></a>
               <a href=""><i class="fa-brands fa-instagram"></i></a>
@@ -53,7 +53,7 @@
       </div>
   `;
 
-  document.querySelector<HTMLAllCollection>("#contact")!.innerHTML = `
+document.querySelector<HTMLAllCollection>("#contact")!.innerHTML = `
           <form autocomplete="off" action="https://formsubmit.co/a14f6c3795f740ba3029e5404db113cd" method="POST">
                     <h2 class="contactme">Contactame</h2>
                     <div class="input-group">
@@ -67,6 +67,4 @@
           </form>
   `;
 
-  slider();
-
-  
+slider();

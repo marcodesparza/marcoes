@@ -7,7 +7,7 @@ document.querySelector<HTMLDivElement>("#name")!.innerHTML = `
   <div class="princontainer">
     <h1 class="son">😺 Marco Esparza</h1>
     <p class="daug">
-    Bienvenido a una descripcion mas a fondo de quien soy 
+    Bienvenido a una descripción mas a fondo de quien soy 
       <div class="headerbar">
               <ul class="states">
                   <li id="who"><a href="#">Quien soy</a></li>
@@ -20,9 +20,7 @@ document.querySelector<HTMLDivElement>("#name")!.innerHTML = `
   `;
 
 document.querySelector<HTMLDivElement>("#press")!.innerHTML = `
-    <div id=caja>
-    <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </div>
+    <div id=caja></div>
     `;
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
@@ -34,22 +32,18 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     </div>
     `;
 document.querySelector<HTMLDivElement>("#selfpicture")!.innerHTML = `
-      <a href="https://vitejs.dev" target="_blank" class="portada">
+      <a href="" target="_blank" class="portada">
       <img src="${selfie}" class="selfie" alt="Vite logo" />
       </a>
     `;
 
 document.querySelector<HTMLDivElement>("#foot")!.innerHTML = `
           <div class="socialIcons">
-              <a href=""><i class="fa-brands fa-linkedin"></i></a>
-              <a href=""><i class="fa-brands fa-instagram"></i></a>
-              <a href=""><i class="fa-brands fa-twitter"></i></a>
-              <a href=""><i class="fa-brands fa-google-plus"></i></a>
-              <a href=""><i class="fa-brands fa-youtube"></i></a>
+              <a href="https://www.linkedin.com/in/marco-antonio-esparza-salas/"><i class="fa-brands fa-linkedin"></i></a>
           </div>      
       </div>
       <div class="footerBottom">
-          <p>Copyright &copy;2024; Desarrollado por <span class="designer">Marco</span></p>
+          <p>Copyright &copy;2024; Desarrollado por mi osea<span class="designer">Marco 😊</span></p>
       </div>
   `;
 

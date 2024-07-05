@@ -8,6 +8,8 @@ onmouse.forEach((el) => {
     "Lo que siempre e querido es dedicarme a disfrutar lo que e aprendido haciendo una pequeña empresa donde lo importante sean las personas, creo que cada paso que doy me acerco mas y claro vivir cerca del mar 😊🌊",
   ];
 
+  document.getElementById("caja")!.innerHTML = description[0];
+
   el.addEventListener("mouseover", (event: MouseEvent) => {
     const objetivo = event.target as HTMLElement;
     let test2: string = objetivo.id;

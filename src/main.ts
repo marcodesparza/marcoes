@@ -1,5 +1,4 @@
 import "./style.css";
-import viteLogo from "/vite.svg";
 import selfie from "./selfp.jpg";
 import { slider } from "./slider.ts";
 

@@ -1,6 +1,6 @@
 import "./style.css";
 import viteLogo from "/vite.svg";
-import selfie from "./gatito.jpg";
+import selfie from "./selfp.jpg";
 import { slider } from "./slider.ts";
 
 document.querySelector<HTMLDivElement>("#name")!.innerHTML = `
@@ -32,7 +32,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     </div>
     `;
 document.querySelector<HTMLDivElement>("#selfpicture")!.innerHTML = `
-      <a href="" target="_blank" class="portada">
+      <a target="_blank" class="portada">
       <img src="${selfie}" class="selfie" alt="Vite logo" />
       </a>
     `;

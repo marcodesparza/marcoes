@@ -447,3 +447,18 @@ textarea {
 :focus {
   outline: 1px solid black;
 }
+
+
+#techstack {
+  grid-column: 5 / 20 ;
+  padding: 50px 55px;
+  box-shadow: 0 0 20px rgb black;
+  border-radius: 40px;
+  display: flex;
+  align-items: stretch;
+}
+
+.logos {
+  width: 150px;
+  height: 150px;
+}

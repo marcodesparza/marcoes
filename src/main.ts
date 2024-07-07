@@ -1,6 +1,13 @@
 import "./style.css";
 import selfie from "./selfp.jpg";
 import { slider } from "./slider.ts";
+import dockerlog from "./logos/docker-logo-blue.svg"
+import jslogo from "./logos/JavaScript-logo.png"
+
+
+
+
+
 
 document.querySelector<HTMLDivElement>("#name")!.innerHTML = `
   <div class="princontainer">
@@ -59,5 +66,11 @@ document.querySelector<HTMLAllCollection>("#contact")!.innerHTML = `
                     </div>
           </form>
   `;
+
+
+  document.querySelector<HTMLDivElement>("#technology")!.innerHTML = `
+     <img src="${dockerlog}" class="logos" />
+     <img src="${jslogo}" class="logos" />
+  `
 
 slider();

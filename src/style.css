@@ -394,21 +394,47 @@ html {
 }
 
 /* form */
-
-#contact {
-  grid-column: 10 / 16;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  border-radius: 40px;
+@media (min-width: 0px) {
+  #contact {
+    grid-column: 3 / 17;
+    display: flex;
+    width: 150%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+  }
 }
+
+
+@media (min-width: 700px) {
+  #contact {
+    grid-column: 8 / 15;
+    display: flex;
+    width: 150%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+  }
+}
+@media (min-width: 1250px) {
+  #contact {
+    grid-column: 10 / 15;
+    display: flex;
+    width: 150%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+  }
+}
+
+
 
 form {
   padding: 50px 55px;
   box-shadow: 0 0 20px rgb black;
   border-radius: 40px;
   text-align: center;
-  width: 340px;
+  width: 400px;
 }
 
 form h2 {
@@ -459,6 +485,6 @@ textarea {
 }
 
 .logos {
+  height: auto;
   width: 150px;
-  height: 150px;
 }

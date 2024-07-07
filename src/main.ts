@@ -3,6 +3,9 @@ import selfie from "./selfp.jpg";
 import { slider } from "./slider.ts";
 import dockerlog from "./logos/docker-logo-blue.svg"
 import jslogo from "./logos/JavaScript-logo.png"
+import linuxlog from "./logos/Symbol-Linux-500x276.jpg"
+import odoolog from "./logos/odoo_logo.png"
+import reactlog from "./logos/react.png"
 
 
 
@@ -69,8 +72,11 @@ document.querySelector<HTMLAllCollection>("#contact")!.innerHTML = `
 
 
   document.querySelector<HTMLDivElement>("#technology")!.innerHTML = `
-     <img src="${dockerlog}" class="logos" />
+    <a > <img src="${dockerlog}" class="logos" /> </a>
      <img src="${jslogo}" class="logos" />
+     <img src="${linuxlog}" class="logos" />
+     <img src="${odoolog}" class="logos" />
+     <img src="${reactlog}" class="logos" />
   `
 
 slider();

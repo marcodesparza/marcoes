@@ -19,7 +19,6 @@ document.querySelector<HTMLDivElement>("#name")!.innerHTML = `
               <ul class="states">
                   <li id="who"><a href="#">Quien soy</a></li>
                   <li id="experience"><a href="#">Mi experiencia</a></li>
-                  <li id="contacme"><a href="#">Contactame</a></li>
               </ul>
           </div>
     </p>
@@ -54,19 +53,7 @@ document.querySelector<HTMLDivElement>("#foot")!.innerHTML = `
       </div>
   `;
 
-document.querySelector<HTMLAllCollection>("#contact")!.innerHTML = `
-          <form autocomplete="off" action="https://formsubmit.co/a14f6c3795f740ba3029e5404db113cd" method="POST">
-                    <h2 class="contactme">Contactame</h2>
-                    <div class="input-group">
-                      <input type="text" name="name" placeholder="Nombre">
-                      <input id="email" type="email" name="email" placeholder="Email">
-                      <textarea name="message" cols="30" rows="5" placeholder="Mensaje"></textarea>
-                      <input class="send" id="submit" type="submit" value="Enviar">
-                      <input type="hidden" name="_next" value="http://localhost:5173/">
-                      <input type="hidden" name="_captcha" value="false">
-                    </div>
-          </form>
-  `;
+
 
 document.querySelector<HTMLDivElement>("#technology")!.innerHTML = `
     <h2 class="stack"> Mi Stack ⌨️🖱️</h2>

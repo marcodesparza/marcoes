@@ -1,15 +1,13 @@
 import "./style.css";
 import selfie from "./selfp.jpg";
 import { slider } from "./slider.ts";
-import dockerlog from "./logos/docker-logo-blue.svg"
-import jslogo from "./logos/JavaScript-logo.png"
-import linuxlog from "./logos/Symbol-Linux-500x276.jpg"
-import odoolog from "./logos/odoo_logo.png"
-import reactlog from "./logos/react.png"
-
-
-
-
+import dockerlog from "./logos/docker-logo-blue.svg";
+import jslogo from "./logos/JavaScript-logo.png";
+import linuxlog from "./logos/Symbol-Linux-500x276.jpg";
+import odoolog from "./logos/odoo_logo.png";
+import reactlog from "./logos/react.png";
+import pythonlogo from "./logos/Python.png";
+import bashlogo from "./logos/bash.png";
 
 
 document.querySelector<HTMLDivElement>("#name")!.innerHTML = `
@@ -70,13 +68,15 @@ document.querySelector<HTMLAllCollection>("#contact")!.innerHTML = `
           </form>
   `;
 
-
-  document.querySelector<HTMLDivElement>("#technology")!.innerHTML = `
-    <a > <img src="${dockerlog}" class="logos" /> </a>
-     <img src="${jslogo}" class="logos" />
-     <img src="${linuxlog}" class="logos" />
-     <img src="${odoolog}" class="logos" />
-     <img src="${reactlog}" class="logos" />
-  `
+document.querySelector<HTMLDivElement>("#technology")!.innerHTML = `
+    <h2 class="stack"> Mi Stack ⌨️🖱️</h2>
+    <img src="${reactlog}" class="logos" />
+    <img src="${jslogo}" class="logos" />
+    <img src="${pythonlogo}" class="logos" />
+    <img src="${linuxlog}" class="logos" />
+    <img src="${bashlogo}" class="logos" />
+    <img src="${dockerlog}" class="logos" />
+    <img src="${odoolog}" class="logos" />
+  `;
 
 slider();

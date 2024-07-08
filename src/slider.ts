@@ -21,7 +21,7 @@ export function slider() {
   resultados = [
     "Mis conocimientos destacaron en el manejo de un equipo de desarrollo en Python donde nuestra principal meta era cumplir con las necesidades empresariales de varios clientes simultaneamente. La metodologia Scrum fue uno de lo que mas me gusto al estar en esta industria. Me encare a retos donde la perfeccion en los procesos definia nuestro exito",
     "Mis habilidades que mas destacan son el desarrollo y la maquetacion de soluciones de software que sean vistos varios lenguajes. Asi como yo se parte del desarrollo utilizando Javascript (React y Typescript), claro nunca dejando la administracion de software como uno de los pilares de mi carrera profesional",
-    "Bombero en la administracion de bases de datos, perdidad de accesos, manejo de seguridad de sistemas. Son lo mas comun que realizo en mi dia a dia como freelance. Pero comunmente realizo paginas web asi como servios de Backend, y asesoramiento de parte del ERP ODOO",
+    "Bombero en la administracion de bases de datos, perdida de accesos, manejo de seguridad de sistemas. Son lo mas comun que realizo en mi dia a dia como freelance. Pero comunmente realizo paginas web asi como servios de Backend, y asesoramiento de parte del ERP ODOO",
     "Realice varios proyectos, pero el mas notable fue crear la carrera de Mecatronica la cual esta en este momento en curso en la preparatoria. Ademas de fundar varios club los cuales tienen participacion en competencias de nivel internacional",
   ];
 

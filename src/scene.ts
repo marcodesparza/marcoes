@@ -1,6 +1,6 @@
 //crear las variables de control
 let starts: any = 0;
-import * as THREE from 'three';
+import * as THREE from "three";
 // Crear la escena
 const scene = new THREE.Scene();
 

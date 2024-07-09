@@ -11,4 +11,3 @@ whoim.addEventListener("click", () => {
 experience.addEventListener("click", () => {
   projectsscroll?.scrollIntoView({ block: "center", behavior: "smooth" });
 });
-

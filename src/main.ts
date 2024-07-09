@@ -8,6 +8,7 @@ import odoolog from "./logos/odoo_logo.png";
 import reactlog from "./logos/react.png";
 import pythonlogo from "./logos/Python.png";
 import bashlogo from "./logos/bash.png";
+import tslogo from "./logos/ts-logo-256.png";
 
 document.querySelector<HTMLDivElement>("#name")!.innerHTML = `
   <div class="princontainer">
@@ -54,6 +55,7 @@ document.querySelector<HTMLDivElement>("#foot")!.innerHTML = `
 
 document.querySelector<HTMLDivElement>("#technology")!.innerHTML = `
     <h2 class="stack"> Mi Stack ⌨️🖱️</h2>
+    <img src="${tslogo}" class="logos" />
     <img src="${reactlog}" class="logos" />
     <img src="${jslogo}" class="logos" />
     <img src="${pythonlogo}" class="logos" />

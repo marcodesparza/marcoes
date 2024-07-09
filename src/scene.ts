@@ -1,6 +1,6 @@
 //crear las variables de control
 let starts: any = 0;
-
+import * as THREE from 'three';
 // Crear la escena
 const scene = new THREE.Scene();
 
@@ -15,7 +15,7 @@ camera.position.z = 5;
 
 // Crear el renderer
 const renderer = new THREE.WebGLRenderer({
-  canvas: document.querySelector("#bg"),
+  canvas: document.querySelector("#bg") as HTMLCanvasElement,
 });
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);

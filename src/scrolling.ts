@@ -1,19 +1,14 @@
-const app = document.querySelector<HTMLAllCollection>("#app");
-const projectsscroll = document.querySelector<HTMLAllCollection>("#proyects");
-const objetivs = document.querySelector<HTMLAllCollection>("#contact");
+const app = document.querySelector<HTMLDivElement>("#app");
+const projectsscroll = document.querySelector<HTMLDivElement>("#proyects");
 
-const whoim = document.querySelector<HTMLAllCollection>("#who");
-const experience = document.querySelector<HTMLAllCollection>("#experience");
-const contactme = document.querySelector<HTMLAllCollection>("#contacme");
+const whoim: any = document.querySelector<HTMLLIElement>("#who");
+const experience: any = document.querySelector<HTMLLIElement>("#experience");
 
-whoim!.addEventListener("click", () => {
+whoim.addEventListener("click", () => {
   app?.scrollIntoView({ block: "center", behavior: "smooth" });
 });
 
-experience!.addEventListener("click", () => {
+experience.addEventListener("click", () => {
   projectsscroll?.scrollIntoView({ block: "center", behavior: "smooth" });
 });
 
-contactme!.addEventListener("click", () => {
-  objetivs?.scrollIntoView({ block: "center", behavior: "smooth" });
-});

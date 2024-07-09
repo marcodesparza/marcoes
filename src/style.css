@@ -1,7 +1,5 @@
 @import url("https://use.typekit.net/jmk3xov.css");
 
-
-
 /* form */
 @media (min-width: 0px) {
   #contact {
@@ -21,9 +19,138 @@
   }
 }
 
+.headerbar {
+  margin: 30px 0;
+  border-top: 10%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.headerbar ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
 
+.headerbar ul li a:hover {
+  opacity: 1;
+}
 
 @media (min-width: 0px) {
+  .headerbar ul li a {
+    border-radius: 40px;
+    color: white;
+    margin: 20px;
+    white-space: nowrap;
+    text-decoration: none;
+    font-size: 4vw;
+    opacity: 0.7;
+    transition: 0.5s;
+  }
+
+  #contact {
+    grid-column: 1 / 15;
+    display: flex;
+    width: 150%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+  }
+  #mediagroup {
+    display: flex;
+    grid-column: 6 / 20;
+    margin-bottom: 150%;
+    margin-top: 0%;
+    border-radius: 40px;
+    align-items: center;
+    border-radius: 40px;
+  }
+  header {
+    background: var(--dark-bg);
+    grid-column: 2 / 5;
+    font-size: 2.5rem;
+    padding: 2rem;
+    margin-bottom: 50%;
+  }
+
+  .separator {
+    margin-bottom: 10%;
+    margin-top: 0%;
+    border-radius: 40px;
+    grid-column: 3 / 23;
+  }
+
+  .son {
+    font-size: 6vw;
+    text-align: center;
+  }
+
+  .daug {
+    font-size: 4vw;
+    text-align: center;
+  }
+
+  .subtitle {
+    margin-left: 5%;
+    text-align: center;
+  }
+
+  /* second description */
+
+  #description {
+    align-items: center;
+    grid-column: 2 / 24;
+    margin-bottom: 40%;
+    border-radius: 40px;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+  .notis {
+    display: table;
+    align-items: center;
+  }
+  .notes {
+    display: table-cell;
+    padding: 5px;
+
+    white-space: nowrap;
+  }
+
+  #press {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  #app {
+    margin: 5%;
+    font-size: 3vw;
+    padding: 2rem;
+  }
+
+  .menu {
+    display: table-column;
+    width: 100%;
+    justify-content: space-between;
+  }
+  /* end descripton */
+}
+
+@media (min-width: 600px) {
+  .headerbar ul li a {
+    border-radius: 40px;
+    color: white;
+    margin: 20px;
+    white-space: nowrap;
+    text-decoration: none;
+    font-size: 3vw;
+    opacity: 0.7;
+    transition: 0.5s;
+  }
   #contact {
     grid-column: 1 / 15;
     display: flex;
@@ -54,9 +181,69 @@
     border-radius: 40px;
     grid-column: 6 / 20;
   }
+
+  .subtitle {
+    margin-left: 5%;
+    text-align: center;
+  }
+
+  /* second description */
+
+  #description {
+    align-items: center;
+    grid-column: 2 / 24;
+    margin-bottom: 40%;
+    border-radius: 40px;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+  .notis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .notes {
+    display: table-cell;
+    padding: 5px;
+    font-size: 3vw;
+    white-space: nowrap;
+  }
+
+  #press {
+    width: 48%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  #app {
+    margin: 0 auto;
+    font-size: 1vw;
+    padding: 2rem;
+  }
+
+  .menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  /* end descripton */
 }
 
 @media (min-width: 1000px) {
+  .headerbar ul li a {
+    border-radius: 40px;
+    color: white;
+    margin: 20px;
+    white-space: nowrap;
+    text-decoration: none;
+    font-size: 2vw;
+    opacity: 0.7;
+    transition: 0.5s;
+  }
   #mediagroup {
     display: flex;
     grid-column: 15 / 24;
@@ -79,10 +266,68 @@
     border-radius: 40px;
     grid-column: 2 / 13;
   }
+  .son {
+    font-size: 4vw;
+  }
+
+  .daug {
+    font-size: 2vw;
+  }
+
+  .subtitle {
+    margin-left: 5%;
+  }
+
+  /* second description */
+
+  #description {
+    align-items: center;
+    grid-column: 2 / 24;
+    margin-bottom: 40%;
+    border-radius: 40px;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  .notis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .notes {
+    display: table-cell;
+    padding: 5px;
+    white-space: nowrap;
+  }
+
+  #press {
+    width: 48%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  #app {
+    margin: 0 auto;
+    font-size: 1vw;
+    padding: 2rem;
+  }
+
+  .menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  /* end descripton */
 }
-
-
-
 
 canvas {
   position: fixed;
@@ -132,8 +377,6 @@ canvas {
 
 /*bodys element */
 
-
-
 section {
   grid-column: 2 / 8;
   padding: 1rem;
@@ -143,24 +386,9 @@ section {
   margin-bottom: var(--spacing);
 }
 
-
-
-
 /* termina bodys */
 
 /* principal page of landing */
-
-.son {
-  font-size: 4vw;
-}
-
-.daug {
-  font-size: 2vw;
-}
-
-
-
-
 
 .selfie {
   border-radius: 40px;
@@ -170,45 +398,6 @@ section {
   justify-content: center;
 }
 /* en page of landing */
-
-/* second description */
-
-#description {
-  align-items: center;
-  grid-column: 2 / 24;
-  margin-bottom: 40%;
-  border-radius: 40px;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0;
-}
-
-.subtitle {
-  margin-left: 5%;
-}
-
-#press {
-  width: 48%;
-  text-align: center;
-  padding: 20px;
-  box-sizing: border-box;
-}
-#app {
-  margin: 0 auto;
-  font-size: 1vw;
-  padding: 2rem;
-}
-
-.menu {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
-/* end descripton */
 
 .pressblur {
   animation-duration: 0.5s;
@@ -397,32 +586,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.headerbar {
-  margin: 30px 0;
-  border-top: 10%;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-.headerbar ul {
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-}
-.headerbar ul li a {
-  border-radius: 40px;
-  color: white;
-  margin: 20px;
-  white-space: nowrap;
-  text-decoration: none;
-  font-size: 1.7vw;
-  opacity: 0.7;
-  transition: 0.5s;
-}
-.headerbar ul li a:hover {
-  opacity: 1;
-}
-
 .states {
   margin: 0 auto;
   padding: 0 auto;
@@ -434,9 +597,6 @@ html {
   position: left;
   right: 50%;
 }
-
-
-
 
 form {
   padding: 50px 55px;
@@ -483,9 +643,8 @@ textarea {
   outline: 1px solid black;
 }
 
-
 #techstack {
-  grid-column: 5 / 20 ;
+  grid-column: 5 / 20;
   padding: 50px 55px;
   box-shadow: 0 0 20px rgb black;
   border-radius: 40px;

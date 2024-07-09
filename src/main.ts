@@ -9,7 +9,6 @@ import reactlog from "./logos/react.png";
 import pythonlogo from "./logos/Python.png";
 import bashlogo from "./logos/bash.png";
 
-
 document.querySelector<HTMLDivElement>("#name")!.innerHTML = `
   <div class="princontainer">
     <h1 class="son">😺 Marco Esparza</h1>
@@ -30,7 +29,7 @@ document.querySelector<HTMLDivElement>("#press")!.innerHTML = `
     `;
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
-    <div>
+    <div class="notis">
       <h2 class="notes" id="el1">Quien Soy</h2>
       <h2 class="notes" id="el2">Experiencia</h2>
       <h2 class="notes" id="el3">Sueños</h2>
@@ -52,8 +51,6 @@ document.querySelector<HTMLDivElement>("#foot")!.innerHTML = `
           <p>Copyright &copy;2024; Desarrollado por mi osea<span class="designer">Marco 😊</span></p>
       </div>
   `;
-
-
 
 document.querySelector<HTMLDivElement>("#technology")!.innerHTML = `
     <h2 class="stack"> Mi Stack ⌨️🖱️</h2>

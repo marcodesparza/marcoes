@@ -23,7 +23,7 @@
 
 
 
-@media (min-width: 500px) {
+@media (min-width: 0px) {
   #contact {
     grid-column: 1 / 15;
     display: flex;

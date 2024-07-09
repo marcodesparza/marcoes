@@ -1,6 +1,17 @@
 @import url("https://use.typekit.net/jmk3xov.css");
 
-@media (min-width: 320px) {
+
+
+/* form */
+@media (min-width: 0px) {
+  #contact {
+    grid-column: 3 / 17;
+    display: flex;
+    width: 150%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+  }
   /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
   table,
   p,
@@ -9,6 +20,68 @@
     width: 100%;
   }
 }
+
+
+
+@media (min-width: 500px) {
+  #contact {
+    grid-column: 1 / 15;
+    display: flex;
+    width: 150%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+  }
+  #mediagroup {
+    display: flex;
+    grid-column: 6 / 20;
+    margin-bottom: 100%;
+    margin-top: 0%;
+    border-radius: 40px;
+    align-items: center;
+    border-radius: 40px;
+  }
+  header {
+    background: var(--dark-bg);
+    grid-column: 2 / span 5;
+    font-size: 2.5rem;
+    padding: 2rem;
+    margin-bottom: 50%;
+  }
+  .separator {
+    margin-bottom: 10%;
+    margin-top: 0%;
+    border-radius: 40px;
+    grid-column: 6 / 20;
+  }
+}
+
+@media (min-width: 1000px) {
+  #mediagroup {
+    display: flex;
+    grid-column: 15 / 24;
+    margin-bottom: 100%;
+    margin-top: 0%;
+    border-radius: 40px;
+    align-items: center;
+    border-radius: 40px;
+  }
+  header {
+    background: var(--dark-bg);
+    grid-column: 2 / span 5;
+    font-size: 2.5rem;
+    padding: 2rem;
+    margin-bottom: var(--spacing);
+  }
+  .separator {
+    margin-bottom: 100%;
+    margin-top: 0%;
+    border-radius: 40px;
+    grid-column: 2 / 13;
+  }
+}
+
+
 
 
 canvas {
@@ -43,8 +116,7 @@ main {
 
 h1,
 h2,
-h3,
-blockquote {
+h3 {
   font-family: elevon, sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -60,13 +132,7 @@ canvas {
 
 /*bodys element */
 
-header {
-  background: var(--dark-bg);
-  grid-column: 2 / span 5;
-  font-size: 2.5rem;
-  padding: 2rem;
-  margin-bottom: var(--spacing);
-}
+
 
 section {
   grid-column: 2 / 8;
@@ -77,20 +143,8 @@ section {
   margin-bottom: var(--spacing);
 }
 
-blockquote {
-  margin: 0;
-  padding: 0;
-  grid-column: 2 / span 17;
-  margin-bottom: var(--spacing);
-}
 
-blockquote p {
-  color: black;
-  background-color: white;
-  font-size: 4rem;
-  display: inline;
-  line-height: 1;
-}
+
 
 /* termina bodys */
 
@@ -104,22 +158,9 @@ blockquote p {
   font-size: 2vw;
 }
 
-.separator {
-  margin-bottom: 100%;
-  margin-top: 0%;
-  border-radius: 40px;
-  grid-column: 2 / 13;
-}
 
-#mediagroup {
-  display: flex;
-  grid-column: 15 / 24;
-  margin-bottom: 100%;
-  margin-top: 0%;
-  border-radius: 40px;
-  align-items: center;
-  border-radius: 40px;
-}
+
+
 
 .selfie {
   border-radius: 40px;
@@ -158,6 +199,7 @@ blockquote p {
 }
 #app {
   margin: 0 auto;
+  font-size: 1vw;
   padding: 2rem;
 }
 
@@ -393,39 +435,6 @@ html {
   right: 50%;
 }
 
-/* form */
-@media (min-width: 0px) {
-  #contact {
-    grid-column: 3 / 17;
-    display: flex;
-    width: 150%;
-    justify-content: center;
-    align-items: center;
-    border-radius: 40px;
-  }
-}
-
-
-@media (min-width: 700px) {
-  #contact {
-    grid-column: 8 / 15;
-    display: flex;
-    width: 150%;
-    justify-content: center;
-    align-items: center;
-    border-radius: 40px;
-  }
-}
-@media (min-width: 1250px) {
-  #contact {
-    grid-column: 10 / 15;
-    display: flex;
-    width: 150%;
-    justify-content: center;
-    align-items: center;
-    border-radius: 40px;
-  }
-}
 
 
 

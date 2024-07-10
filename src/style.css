@@ -1,5 +1,19 @@
 @import url("https://use.typekit.net/jmk3xov.css");
 
+
+@media (min-width:2300px ) {
+  #mediagroup {
+    display: flex;
+    grid-column: 6 / 20;
+    margin-bottom: 150%;
+    margin-top: 0%;
+    border-radius: 40px;
+    align-items: center;
+    border-radius: 40px;
+  }
+}
+
+
 /* form */
 @media (min-width: 0px) {
   #contact {

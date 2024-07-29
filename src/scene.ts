@@ -1,6 +1,7 @@
+import * as THREE from "three";
 //crear las variables de control
 let starts: any = 0;
-import * as THREE from "three";
+
 // Crear la escena
 const scene = new THREE.Scene();
 
@@ -67,6 +68,12 @@ function animate() {
 
   renderer.render(scene, camera);
 }
+document.addEventListener('mousemove', (event) => {
+  const mouseX = event.clientX - window.innerWidth / 2;
+  const mouseY = event.clientY - window.innerHeight / 2;
+  camera.rotation.x = mouseY * 0.0001;
+  camera.rotation.y = mouseX * 0.0001;
+});
 
 animate();
 

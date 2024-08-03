@@ -473,6 +473,7 @@ section {
 
 #caja {
   align-self: center;
+  font-size: 2vw;
 }
 
 .notes:hover {
